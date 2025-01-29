@@ -110,7 +110,7 @@ function playVoiceNoteAndReadOutNumber(number) {
         const numberToWords = convertNumberToWords(number);
         const oldCurrencyValue = number * 10000; // Convert to old currency
         const oldCurrencyWords = convertNumberToWords(oldCurrencyValue);
-        readOut(`The total is ${numberToWords} Ghana Cedis, which is ${oldCurrencyWords} in the old currency.`);
+        readOut(`ahzaananin ${numberToWords} Ghana Cedis, kananoola ${oldCurrencyWords} koruun ligri puoh .`);
     };
 }
 
