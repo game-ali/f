@@ -28,7 +28,7 @@ function appendOperator(op) {
         firstOperand = parseFloat(currentInput);
     } else if (operator) {
         firstOperand = operate(firstOperand, parseFloat(currentInput), operator);
-        updateDisplay(firstOperand + " Ghana Cedis");
+        updateDisplay(firstOperand + " GHS");
     }
 
     operator = op;
@@ -48,7 +48,7 @@ function clearDisplay() {
     currentInput = "";
     operator = null;
     firstOperand = null;
-    updateDisplay("0 Ghana Cedis");
+    updateDisplay("0 GHS");
     readOut("clear");
 }
 
@@ -56,7 +56,7 @@ function calculateResult() {
     if (operator && currentInput !== "") {
         let secondOperand = parseFloat(currentInput);
         let result = operate(firstOperand, secondOperand, operator);
-        updateDisplay(result + " Ghana Cedis");
+        updateDisplay(result + " GHS");
         firstOperand = result;
         currentInput = "";
         operator = null;
@@ -66,7 +66,7 @@ function calculateResult() {
 
 function removeLastCharacter() {
     currentInput = currentInput.slice(0, -1);
-    updateDisplay(currentInput || "0 Ghana Cedis");
+    updateDisplay(currentInput || "0 GHS");
     readOut("backspace");
 }
 
