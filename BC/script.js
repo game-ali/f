@@ -7,7 +7,7 @@ let selectedVoice = null;
 
 window.speechSynthesis.onvoiceschanged = () => {
     voices = window.speechSynthesis.getVoices();
-    selectedVoice = voices.find(voice => voice.name === "{azaa na nin}");
+    selectedVoice = voices.find(voice => voice.name === "{localman}");
 };
 
 function appendNumber(number) {
