@@ -11,10 +11,16 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(15deg, lightblue 35%,lightgreen 45%, greenyellow 30%);
             height: 100%;
-            max-height: 
+            max-height: animation: changeBackground 3s infinite;
         }
-        h1{color: blue}
-
+        }
+        @keyframes changeBackground {
+  0% { background: repeating-linear-gradient(65deg, #f6d365, #fda085 10px, #fff 10px, #f6d365 20px); }
+  25% { background: repeating-linear-gradient(55deg, #ff9a9e, #fad0c4 10px, #fff 10px, #ff9a9e 20px); }
+  50% { background: repeating-linear-gradient(25deg, #a1c4fd, #c2e9fb 10px, #fff 10px, #a1c4fd 20px); }
+  75% { background: repeating-linear-gradient(45deg, #fccb90, #d57eeb 10px, #fff 10px, #fccb90 20px); }
+  100% { background: repeating-linear-gradient(35deg, #f6d365, #fda085 10px, #fff 10px, #f6d365 20px); }
+       
         .calculator-container {
             max-width: 300px;
             margin: 50px auto;
@@ -56,8 +62,8 @@
         }
 
         button {
-            width: 28%;
-            height: 50px;
+            width: 30%;
+            height: 70px;
             margin: 5px;
             background-color: #007bff;
             color: white;
