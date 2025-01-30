@@ -67,7 +67,7 @@ function calculateResult() {
 function removeLastCharacter() {
     currentInput = currentInput.slice(0, -1);
     updateDisplay(currentInput || "0 GHS");
-    readOut("vilyceea");
+    readOut("vilycee");
 }
 
 function updateDisplay(value) {
