@@ -49,7 +49,7 @@ function clearDisplay() {
     operator = null;
     firstOperand = null;
     updateDisplay("0 GHS");
-    readOut("veyeese azaa");
+    readOut("vilysi ahzaa");
 }
 
 function calculateResult() {
@@ -67,7 +67,7 @@ function calculateResult() {
 function removeLastCharacter() {
     currentInput = currentInput.slice(0, -1);
     updateDisplay(currentInput || "0 GHS");
-    readOut("veyeese");
+    readOut("vilysi");
 }
 
 function updateDisplay(value) {
