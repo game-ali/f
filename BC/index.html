@@ -63,7 +63,7 @@
 
         button {
             width: 30%;
-            height: 70px;
+            height: 60px;
             margin: 5px;
             background-color: #007bff;
             color: white;
@@ -74,6 +74,7 @@
             cursor: pointer;
             flex: 1 1 22%;
             max-width: 100px;
+            transition:background 0.3s, transform 0.3s;
         }
 
         button:focus {
@@ -99,6 +100,10 @@
         button.decimal {
             background-color: #6f42c1;
         }
+        button:hover{background: linear-gradient(to right, #e6e6fa, #ffb6c1, #fffacd);
+                    transform;scale(1.1);
+                    }
+
     </style>
 </head>
 <body>
