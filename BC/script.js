@@ -49,7 +49,7 @@ function clearDisplay() {
     operator = null;
     firstOperand = null;
     updateDisplay("0 GHS");
-    readOut("vilysi ahzaa");
+    readOut("vilycee ahzaa");
 }
 
 function calculateResult() {
@@ -67,7 +67,7 @@ function calculateResult() {
 function removeLastCharacter() {
     currentInput = currentInput.slice(0, -1);
     updateDisplay(currentInput || "0 GHS");
-    readOut("vilysi");
+    readOut("vilyceea");
 }
 
 function updateDisplay(value) {
@@ -110,7 +110,7 @@ function playVoiceNoteAndReadOutNumber(number) {
         const numberToWords = convertNumberToWords(number);
         const oldCurrencyValue = number * 10000; // Convert to old currency
         const oldCurrencyWords = convertNumberToWords(oldCurrencyValue);
-        readOut(`ahzaananin ${numberToWords} Ghana Cedis, Carnahnoola ${oldCurrencyWords} koruun ligri puoh .`);
+        readOut(`ahzaananin ${numberToWords} Ghana Cedis, Carnahnoola ${oldCurrencyWords} koruan ligri puwuooh .`);
     };
 }
 
